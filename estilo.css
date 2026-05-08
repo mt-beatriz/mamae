@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5e2dc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HERO */
+
+.hero{
+    position: relative;
+
+    height: 700px;
+
+    background-image: url("img/fundo.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.55);
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1{
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+
+    width: 700px;
+    max-width: 90%;
+
+    margin: 0 auto 25px auto;
+}
+
+.hero-content button{
+    display: block;
+
+    margin: 0 auto;
+
+    width: 320px;
+    max-width: 90%;
+
+    padding: 14px;
+
+    border: 5px solid #ff0f6d;
+    border-radius: 50px;
+
+    background-color: #ff7fb8;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero-content button:hover{
+    transform: scale(1.05);
+}
+
+
+/* LINK DO BOTÃO */
+
+.btnEntrar{
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 28px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+}
+
+
+/* PREMIO */
+
+.premio{
+    text-align: center;
+
+    padding: 35px 20px;
+
+    background-color: #fff4f0;
+}
+
+.premio h2{
+    color: #ff6fa9;
+
+    font-size: 48px;
+    font-family: 'Fredoka', sans-serif;
+
+    margin-bottom: 10px;
+}
+
+.premio p{
+    font-size: 24px;
+
+    font-family: 'Lobster', cursive;
+
+    margin-bottom: 25px;
+}
+
+.premio img{
+    width: 260px;
+
+    border-radius: 10%;
+}
+
+
+/* MOMENTOS */
+
+.momentos{
+    padding: 35px 20px;
+}
+
+.titulo-momentos{
+    width: 500px;
+    max-width: 90%;
+
+    margin: auto;
+    margin-bottom: 35px;
+
+    background-color: #ff7fb8;
+
+    border: 5px solid #ff0f6d;
+    border-radius: 50px;
+
+    text-align: center;
+
+    padding: 12px;
+
+    color: white;
+
+    font-size: 28px;
+    font-family: 'Lobster', cursive;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+
+    padding: 15px;
+
+    transition: transform 0.4s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 240px;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+
+/* MENSAGEM */
+
+.mensagem{
+    width: 92%;
+
+    margin: 45px auto;
+
+    background-color: #ff7fb8;
+
+    border: 6px solid #ff0f6d;
+    border-radius: 25px;
+
+    padding: 22px;
+
+    color: white;
+}
+
+.mensagem h3{
+    font-size: 30px;
+
+    font-family: 'Lobster', cursive;
+
+    margin-bottom: 12px;
+}
+
+.mensagem p{
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    font-family: 'Lobster', cursive;
+}
+
+.mensagem h2{
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 48px;
+
+    color: #c5005c;
+
+    font-family: 'Lobster', cursive;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #ff6fa9;
+
+    text-align: center;
+
+    padding: 28px;
+
+    font-size: 18px;
+
+    color: white;
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width: 900px){
+
+    .hero-content h1{
+        font-size: 32px;
+    }
+
+    .premio h2{
+        font-size: 34px;
+    }
+
+    .premio p{
+        font-size: 20px;
+    }
+
+    .mensagem h2{
+        font-size: 38px;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .hero{
+        height: 420px;
+    }
+
+    .hero-content h1{
+        font-size: 24px;
+    }
+
+    .hero-content button{
+        width: 250px;
+    }
+
+    .btnEntrar{
+        font-size: 22px;
+    }
+
+    .titulo-momentos{
+        font-size: 22px;
+    }
+
+    .card img{
+        width: 200px;
+        height: 200px;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+
+}
+
+.nome{
+    font-family: 'Lobster', cursive;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
